@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>C-Documentation</h1>
+        </header>
+        <ul id="nav-list">
+            <a href="#Introduction" class="nav-link"><li>Introduction</li></a><br>
+            <a href="#Syntax" class="nav-link"><li>Syntax</li></a><br>
+            <a href="#Hello World" class="nav-link"><li>Hello World</li></a><br>
+            <a href="#Comments" class="nav-link"><li>Comments</li></a><br>
+            <a href="#Variables" class="nav-link"><li>Variables</li></a><br>
+            <a href="#Declaring Variables" class="nav-link"><li>Declaring Variables</li></a><br>
+            <a href="#Variable Scope" class="nav-link"><li>Variable Scope</li></a><br>
+            <a href="#Local and Global Variables" class="nav-link"><li>Local and Global Variables</li></a><br>
+            <a href="#If...Else Statement" class="nav-link"><li>If...Else Statement</li></a><br>
+            <a href="#For Loop" class="nav-link"><li>For Loop</li></a><br>
+            <a href="#While Loop" class="nav-link"><li>While Loop</li></a><br>
+            <a href="#Arrays" class="nav-link"><li>Arrays</li></a><br>
+            <a href="#References" class="nav-link"><li>References</li></a><br>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>
+                <h2>Introduction</h2>
+            </header>
+            <article>
+                <p>C programming is a general-purpose, procedural, imperative computer programming language developed in 1972 by Dennis M. Ritchie at the Bell Telephone Laboratories to develop the UNIX operating system.</p>
+                <p> C is the most widely used computer language. It keeps fluctuating at number one scale of popularity along with Java programming language, which is also equally popular and most widely used among modern software programmers.</p>
+                <ul>
+                    <li>C was invented to write an operating system called UNIX.</li>
+                    <li>Today's most popular Linux OS and RDBMS MySQL have been written in C.</li>
+                    <li>Today C is the most widely used and popular System Programming Language.</li>
+                    <li>Most of the state-of-the-art software have been implemented using C.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="Syntax" class="main-section">
+            <header>
+                <h2>Syntax</h2>
+            </header>
+            <article>
+                <code>#include&lt;stdio.h&gt;  //library<br>int main()  //mandatory function<br>&nbsp;{  //body of the function<br>&nbsp;&nbsp;&nbsp;printf("...");  //print function which prints out the statement inside'()'<br>&nbsp;&nbsp;return 0;  //keyword which returns some value of the function<br>&nbsp;}  //end of function body</code>                  
+            </article>
+        </section>
+
+        <section id="Hello World" class="main-class">
+            <header>
+                <h2>Hello World</h2>
+            </header>
+            <article>
+                <code>#include&lt;stdio.h&gt;<br>int main() {<br>&nbsp;&nbsp;printf("Hello World");<br>&nbsp;return 0;<br>}</code>
+            </article>
+        </section>
+
+        <section id="Comments" class="main-class">
+            <header>
+                <h2>Comments</h2>
+            </header>
+            <article>
+                <p>Comments are the text that are ignored during compiling.When the code is longer,it helps the reader to make understand about the code</p>
+                <h3>Two types of comments:</h3>
+                <ul1>
+                    <li1>Single-line comment:</li1>
+                </ul1>
+                <code>//This is single line comment.</code>
+                <ul1>
+                    <li1>Mutli-line comment:</li1>
+                </ul1>
+                <code>/*This is</code><br>
+                <code>multi-line comment.*/</code>
+            </article>
+        </section>
+
+        <section id="Variables" class="main-class">
+            <header>
+                <h2>Variables</h2>
+            </header>
+            <article>
+                <p>Variables are basically storage area of our program.Variables have specific type,size and layout of variable's memory.<br>A variable's name can be composed of letters,digits and underscore'_'.It can start with a letter or an underscore.<br>Uppercase and Lowercase letters are distinct because C is case-sensitive.</p>
+            </article>
+        </section>
+        <section id="Declaring Variables" class="main-class">
+            <header>
+                <h2>Declaring Variables</h2>
+            </header>
+                <ul1>
+                    <li1>Char:</li1>
+                    <p>Stores a single character and it's storage memory is 1 bit.</p>
+                    <code>char myCharacter ='a';  //a->character of 1 bit</code>
+                    </ul1>
+                <ul1>
+                    <li1>Int:</li1>
+                    <p>Stores integer type value and it's storage memory is 2 or 4 bits.</p>
+                    <code>int myInteger = 10;</code>
+                </ul1>
+                <ul1>
+                    <li1>Float:</li1>
+                    <p>Stores decimal values and it's storage memory is 4 bits.</p>
+                    <code>float myFloat = 1.2513;</code>
+                </ul1>
+                <ul1>
+                    <li1>Double:</li1>
+                    <p>Stores floating values of 64 bits.</p>
+                    <code>double myDouble = 5461.49614;</code>
+                </ul1>
+                <ul1>
+                    <li1>String:</li1>
+                    <p>String is an array(collection) of characters.</p>
+                    <code>char myString = "This is String";</code>
+                </ul1>
+           </article>
+        </section>
+
+        <section id="Variable Scope" class="main-class">
+                <header>
+                    <h2>Variable Scope</h2>
+                </header>
+                <article>
+                    <p>Scope of a variable is the region in the program where the defined variable exists and beyond the region the variable cannot be accessed.</p>
+                </article>
+        </section>
+        <section id="Local and Global Variables" class="main-class">
+            <header>
+                <h2>Local and Global Variables</h2>
+                </header>
+                <article>
+                    <h3>Local Variables:</h3>
+                    <p>Variables that are declared/defined inside a function or block are called Local Variables.These can be used within that function.Outside the function these variables are not accessible.</p>
+                    <code>#include&lt;stdio.h&gt;<br>int main()<br>{<br>&nbsp;int a,b,c;<br>&nbsp;a=10;<br>&nbsp;b=20;<br>&nbsp;c=a+b;<br>&nbsp;printf("Sum=%d",c);<br>&nbsp;return 0;<br>}</code>
+                    <h3>Global Variables:</h3>
+                    <p>Variables that are declared outside the function are called Global Variables.These variables hold their value throughout the lifetime of the program and can be accessed by any function inside the program.<br>If same variable is being declared both inside and outside a function with different values,then the variable declared inside will be taken preference.</p>
+                    <code>#include&lt;stdio.h&gt;<br>int g=10;<br>int main()<br>{<br>&nbsp;int a,b;<br>&nbsp;a=5;<br>&nbsp;b=a+g;<br>&nbsp;printf("Sum=%d",b);<br>&nbsp;return 0;<br>}</code>
+                </article>
+        </section>
+
+        <section id="If...Else Statement" class="main-class">
+            <header>
+                <h2>If...Else Statement</h2>
+            </header>
+            <article>
+                <h3>If :</h3>
+                <p>An if statement consists of a Boolean expression followed by one or more statements</p>
+                <code>#include&lt;stdio.h&gt;<br>int main()<br>{<br>&nbsp;int a=10;<br>&nbsp;if(a&lt;20)  {<br>&nbsp;&nbsp;printf("a is less than 20");<br>&nbsp;&nbsp;}<br>&nbsp;return 0;<br>}</code>
+                <h3>If Else:</h3>
+                <p>An if statement can be followed by an optional else statement, which executes when the Boolean expression is false.</p>
+                <code>#include&lt;stdio.h&gt;<br>int main() {<br>&nbsp;int a=10;<br>&nbsp;if(a&lt;20)  {<br>&nbsp;&nbsp;printf("a is less than 20");<br>&nbsp;}<br>&nbsp;else  {<br>&nbsp;&nbsp;printf("a is not less than 20");<br>&nbsp;}<br>&nbsp;return 0;<br>}</code>
+            </article>
+        </section>
+
+        <section id="Arrays" class="main-class">
+            <header>
+                <h2>Arrays</h2>
+            </header>
+            <article>
+                <p>Arrays a kind of data structure that can store a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type</p>
+                <p>A specific element in an array is accessed by an index. All arrays consist of contiguous memory locations. The lowest address corresponds to the first element and the highest address to the last element.</p>
+                <h3>Declaring Arrays:</h3>
+                <code>type arrayName [ arraySize ];</code>
+                <p>Example:</p>
+                <code>int a[10];  //one-dimensional array</code><br>
+                <h3>Initialising Arrays:</h3>
+                <code>type arrayName [ arraySize ] = {array elements};</code>
+                <p>Example:</p>
+                <code>int a[5]={1,2,3,4,5};</code>                
+            </article>
+        </section>
+        
+        <section id="For Loop" class="main-class">
+            <header>
+                <h2>For Loop</h2>
+            </header>
+            <article>
+                <p>Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body.</p>
+                <code>#include&lt;stdio.h&gt;<br>int main()  {<br>&nbsp;int a=10;<br>&nbsp;while(a&gt;20)  {<br>&nbsp;&nbsp;printf("value of a: %d\n", a);<br>&nbsp;}<br>&nbsp;return 0;<br>}</code>
+            </article>
+        </section>
+
+        <section id="While Loop" class="main-class">
+            <header>
+                <h2>While Loop</h2>
+            </header>
+            <article>
+                <p>Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body.</p>
+                <code>#include&lt;stdio.h&gt;<br>int main()  {<br>&nbsp;int a=10;<br>&nbsp;while(a&gt;20)  {<br>&nbsp;&nbsp;printf("value of a: %d\n", a);<br>&nbsp;&nbsp;a++;<br>&nbsp;}<br>&nbsp;return 0;<br>}</code>
+            </article>
+        </section>
+
+        <section id="References" class="main-class">
+            <header>
+                <h2>References</h2>
+            </header>
+            <article>
+                <ul1>
+                    <li1>All the documentation is taken from <a href="https://www.tutorialspoint.com/cprogramming/index.html">Tutorialspoint</a></li1>
+                </ul1>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
